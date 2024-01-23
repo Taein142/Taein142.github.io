@@ -35,6 +35,21 @@ body{
     /* background-color: rgb(239, 230, 218); */
 }
 img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+}
+label{
+    font-size: 20px;
+}
+#devlepment{
+    display: flex;
+    justify-content: space-around;
+}
+#storage{
+    display: flex;
+}
+.storage{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 10px; /* 원하는 간격으로 조절 */
 }
