@@ -11,11 +11,15 @@ body{
     top: 0;
 }
 .menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     background-color: darkgray;
 }
 .menu-item{
+    margin-right: 20px;
     list-style-type: none;
     flex-grow: 1;
 }
@@ -31,25 +35,32 @@ body{
     background-color: black;
     text-decoration:line-through;
 }
+#home, #development, #storage, #projects{
+    padding-top: 80px;
+}
 #home{
-    /* background-color: rgb(239, 230, 218); */
-}
-img{
-    height: 100px;
-    width: 100px;
-}
-label{
     font-size: 20px;
 }
-#devlepment{
+#development{
     display: flex;
     justify-content: space-around;
 }
+#development img{
+    height: 150px;
+    width: 150px;
+}
+label{
+    font-size: 30px;
+}
 #storage{
     display: flex;
+    justify-content: space-around;
 }
-.storage{
-    border-collapse: collapse;
-    width: 100%;
-    border-spacing: 10px; /* 원하는 간격으로 조절 */
+#storage img{
+    width: 80px;
+    height: 80px;
+}
+.blog, .github{
+    font-size: 20px;
+    border-spacing: 20px;
 }
