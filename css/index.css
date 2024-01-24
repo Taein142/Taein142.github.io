@@ -64,3 +64,26 @@ label{
     font-size: 20px;
     border-spacing: 20px;
 }
+
+#projects {
+    display: flex;
+    width: 100%;
+}
+
+/* #image-slider {
+    flex: 1;
+    overflow: hidden;
+}
+
+#image-slider img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+#project-description {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+} */
