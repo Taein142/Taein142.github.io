@@ -1,176 +1,146 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taein's Portfolio</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js" defer></script>
-    <!-- defer: 여기있는 html파일을 모두 읽은 다음에 자바스크립트를 읽어라 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="header">
         <ul class="menu">
             <li class="menu-item"><a href="#home">Home</a></li>
-            <li class="menu-item"><a href="#development">개발언어&도구</a></li>
-            <li class="menu-item"><a href="#storage">블로그&Github</a></li>
+            <li class="menu-item"><a href="#development">개발언어 & 도구</a></li>
+            <li class="menu-item"><a href="#storage">블로그 & Github</a></li>
             <li class="menu-item"><a href="#projects">프로젝트</a></li>
         </ul>
-    </div>
+    </div><br><br>
+    <div id="body">
+        <div id="home">
+            <ul>
+                <li>안녕하세요.</li>
+                <li>신입 벡엔드 개발자 김태인입니다.</li>
+            </ul><br>
+            <ul>
+                <li>이름: 김태인</li>
+                <li>생년월일: 1997.04.29</li>
+                <li>주소: 인천광역시 미추홀구 학익2동</li><br>
+                <li>최종학력:</li>
+                <li>2022년 2월 성결대학교 행정학과 학사 졸업</li>
+                <li>인천일보아카데미 <br>[K-디지털트레이닝] 빅데이터 기반 데이터 사이언티스트 양성과정 1회차 수료 완료</li>
+            </ul><br>
+            <ul>
+                <li>장점: 조직친화적 성격</li>
+                <li>단점: 개발 경험 부족, 즉각적인 의사 전달력 발전 필요</li>
+            </ul><br>
+            <ul>
+                <li>한 마디: <br>팀원과 자주 소통하며 조직 및 개인 발전을 위해 끊임없이 노력하는 개발자가 되겠습니다.</li>
+            </ul>
+        </div>
 
-    <div id="home">
-        <ul>
-            <li>안녕하세요.</li>
-            <li>신입 벡엔드개발자 김태인이라고 합니다.</li>
-        </ul>
-        <br>
-        <ul>
-            <li>이름: 김태인</li>
-            <li>생년월일: 1997.04.29</li>
-            <li>주소: 인천광역 미추홀구</li>
-            <li>최종학력: </li>
-            <li>2022년 2월 성결대학교 행정학과 학사졸업</li>
-            <li>
-                인천일보아카데미 
-                [K-디지털트레이닝] 빅데이터기반 데이터사이언티스트 양성과정 1회차 참여중
-            </li>
-            <li>(2024.05.22수료예정)</li>
-        </ul>
-        <br>
-        <ul>
-            <li>장점: </li>
-            <li></li>
-            <li>단점: </li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>한 마디:</li>
-            <li></li>
-        </ul>
-    </div>
+        <div id="development">
+            <div id="fullstack">
+                <label for="backs">백엔드
+                    <div class="backs">
+                        <img src="./images/java.png" alt="Java" style="width: 180px; height: 180px;">
+                        <div id="phython">
+                            <img src="./images/phython.png" alt="phython" style="width: 100px; height: 100px;">
+                            <p>weak</p>
+                        </div>
+                    </div>
+                </label>
+                <label for="fronts">프론트엔드
+                    <div class="fronts">
+                        <img src="./images/js.png" alt="JavaScript">
+                        <img src="./images/html.png" alt="HTML">
+                        <img src="./images/jQuery.png" alt="jQuery">
+                    </div>
+                </label>
+            </div><br>
+            <div class="tools">
+                <label for="tools">개발자 도구</label>
+                <div class="tools">
+                    <img src="./images/intellij.png" alt="IntelliJ IDEA">
+                    <img src="./images/github-mark.png" alt="GitHub">
+                    <img src="./images/mysql.png" alt="MySQL">
+                    <img src="./images/vscode.png" alt="VS Code">
+                    <img src="./images/eclipse.png" alt="Eclipse">
+                    <img src="./images/spring.png" alt="Spring">
+                </div>
+            </div>
+        </div>
 
-    <div id="development">
-        <label for="fronts">프론트엔드
-        <div class="fronts"> <br>
-            <img src="./images/js.png">
-            <img src="./images/html.png"> <br>
-            <!-- <img src="./images/bootstrap.png" alt=""> -->
-            <img src="./images/jQuery.png"> <br>
+        <div id="storage">
+            <table class="blog">
+                <tr>
+                    <td>
+                        인천일보아카데미를 다니며<br>
+                        들었던 수업 내용 및<br>
+                        작성한 코드들을<br>
+                        적어놓은 블로그입니다.
+                    </td>
+                    <td>
+                        <a href="https://xodlsdldy.tistory.com/">
+                            <img src="./images/티스토리 아이콘.png" alt="티스토리">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <table class="github">
+                <tr>
+                    <td>
+                        제가 작성한<br>
+                        코드들이 기록되어 있는<br>
+                        깃허브입니다.
+                    </td>
+                    <td>
+                        <a href="https://github.com/Taein142">
+                            <img src="./images/github-mark.png" alt="GitHub">
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
-        </label>
-        <label for="backs">벡엔드
-        <div class="backs">
-            <img src="./images/java.png">
-            <img src="./images/phython.png"> <br>
-        </div>
-        </label>
-        <label for="tools">개발자도구
-        <div class="tools">
-            <img src="./images/intellij.png">
-            <img src="./images/github-mark.png"><br>
-            <img src="./images/mysql.png">
-            <img src="./images/vscode.png"><br>
-            <img src="./images/eclipse.png">
-            <img src="./images/spring.png">
-        </div>
-        </label>
-    </div>
 
-    <div id="storage">
-        <table class="blog">
-            <tr>
-                <td>
-                    인천일보아카데미를 다니며 <br>
-                    들었던 수업내용 및 <br>
-                    작성한 코드들을 <br>
-                    적어놓은 블로그입니다. <br>
-                </td>
-                <td>
-                    <a href="https://xodlsdldy.tistory.com/">
-                        <img src="./images/티스토리 아이콘.png">
-                    </a>
-                </td>
-            </tr>
-        </table>
-        <table class="github">
-            <tr>
-                <td>
-                    제가 작성한 <br>
-                    코드들이 기록되어 있는<br>
-                    깃허브입니다.
-                </td>
-                <td>
-                    <a href="https://github.com/Taein142">
-                        <img src="./images/github-mark.png">
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="projects">
-        <div class="row">
-            <div class="image-container">
-                <img src="./images/임시이미지1.png">
-                <div class="overlay">
-                    <p style="font-size: 8px;">
-                        자바 기초를 완료하며 만든 프로젝트 입니다.
-                        디지몬 카드의 정보를 입력하고 덱을 구축하는 프로젝트를 진행하였습니다.
-                        아쉽게도 DB나 서버 없이 자바만 활용하였기에 콘솔내에서만 작동합니다.
-                    </p>
-                    <a href="https://github.com/Taein142/mini_project_digimon">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
-            </div>
-            <div class="image-container">
-                <img src="./images/임시이미지2.png">
-                <div class="overlay">
-                    <p style="font-size: 8px;">
-                        스프링 레거시 프로젝트로 bookrep프로젝트를 진행하였습니다.
-                        책을 읽고 독후감을 작성할 수 있는 사이트를 만들었습니다.
-                    </p>
-                    <a href="#">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
-            </div>
-            <div class="image-container">
-                <img src="./images/newFullLogo.png">
-                <div class="overlay">
-                    <p>이전의 bookrep프로젝트에 vrp를 도입하여 보다 업그레이드 시켰습니다.</p>
-                    <a href="#">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
+        <div id="projects">
+            <div class="row">
+                <div class="image-container">
+                    <img src="./images/임시이미지1.png" alt="프로젝트1">
+                    <div class="overlay">
+                        <p>
+                            자바 기초를 완료하며 만든 프로젝트입니다.<br>
+                            디지몬 카드의 정보를 입력하고<br>덱을 구축하는 프로젝트를 진행했습니다.
+                        </p>
+                        <a href="https://github.com/Taein142/mini_project_digimon">GitHub로 이동</a>
+                        <a href="https://xodlsdldy.tistory.com/68">상세보기</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./images/newFullLogo.png" alt="프로젝트2">
+                    <div class="overlay">
+                        <p>
+                            파이널 프로젝트 입니다.<br>
+                            독후감을 공유하고<br>유저들 간에 서로 책을 교환하며<br>
+                            vrp를 활용해 배송해주는 서비스 입니다.
+                        </p>
+                        <a href="https://github.com/Taein142/bookrep-boot">GitHub로 이동</a>
+                        <a href="https://xodlsdldy.tistory.com/69">상세보기</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="image-container">
-                <img src="./images/임시이미지2.png" alt="">
-                <div class="overlay">
-                    <p>이미지 설명</p>
-                    <a href="#">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
-            </div>
-            <div class="image-container">
-                <img src="./images/임시이미지2.png" alt="">
-                <div class="overlay">
-                    <p>이미지 설명</p>
-                    <a href="#">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
-            </div>
-            <div class="image-container">
-                <img src="./images/임시이미지2.png" alt="">
-                <div class="overlay">
-                    <p>이미지 설명</p>
-                    <a href="#">github로 이동</a>
-                    <a href="#">상세보기</a>
-                  </div>
-            </div>
-        </div>
-    </div>
+    </div><br><br>
 </body>
+<script>
+    document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </html>
