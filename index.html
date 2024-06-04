@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taein's Portfolio</title>
     <link rel="stylesheet" href="./css/css.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,9 +27,8 @@
                 <li>이름: 김태인</li>
                 <li>생년월일: 1997.04.29</li>
                 <li>주소: 인천광역시 미추홀구 학익2동</li><br>
-                <li>최종학력:</li>
-                <li>2022년 2월 성결대학교 행정학과 학사 졸업</li>
-                <li>인천일보아카데미 <br>[K-디지털트레이닝] 빅데이터 기반 데이터 사이언티스트 양성과정 1회차 수료 완료</li>
+                <li>최종학력: <br>2022년 2월 성결대학교 행정학과 학사 졸업
+                <br>인천일보아카데미 <br>[K-디지털트레이닝] 빅데이터 기반 데이터 사이언티스트 양성과정 1회차 수료 완료</li>
             </ul><br>
             <ul>
                 <li>장점: 조직친화적 성격</li>
@@ -54,9 +52,9 @@
                 </label>
                 <label for="fronts">프론트엔드
                     <div class="fronts">
-                        <img src="./images/js.png" alt="JavaScript">
-                        <img src="./images/html.png" alt="HTML">
                         <img src="./images/jQuery.png" alt="jQuery">
+                        <img src="./images/html.png" alt="HTML">
+                        <img src="./images/js.png" alt="JavaScript">
                     </div>
                 </label>
             </div><br>
@@ -67,8 +65,8 @@
                     <img src="./images/github-mark.png" alt="GitHub">
                     <img src="./images/mysql.png" alt="MySQL">
                     <img src="./images/vscode.png" alt="VS Code">
-                    <img src="./images/eclipse.png" alt="Eclipse">
                     <img src="./images/spring.png" alt="Spring">
+                    <img src="./images/eclipse.png" alt="Eclipse">
                 </div>
             </div>
         </div>
@@ -111,11 +109,12 @@
                     <img src="./images/임시이미지1.png" alt="프로젝트1">
                     <div class="overlay">
                         <p>
-                            자바 기초를 완료하며 만든 프로젝트입니다.<br>
-                            디지몬 카드의 정보를 입력하고<br>덱을 구축하는 프로젝트를 진행했습니다.
+                            디지몬 카드의 정보를 입력하고<br>덱을 구축하는 프로젝트를 진행했습니다.<br>
+                            코딩 시작하고 1개월도 안되서 진행하였기에<br>콘솔상에서만 이루어지는 등<br>
+                            많이 미흡한 미니 프로젝트입니다.
                         </p>
-                        <a href="https://github.com/Taein142/mini_project_digimon">GitHub로 이동</a>
-                        <a href="https://xodlsdldy.tistory.com/68">상세보기</a>
+                        <a href="https://github.com/Taein142/mini_project_digimon" target="_blank">GitHub로 이동</a>
+                        <a href="https://xodlsdldy.tistory.com/68" target="_blank">상세보기</a>
                     </div>
                 </div>
                 <div class="image-container">
@@ -126,8 +125,8 @@
                             독후감을 공유하고<br>유저들 간에 서로 책을 교환하며<br>
                             vrp를 활용해 배송해주는 서비스 입니다.
                         </p>
-                        <a href="https://github.com/Taein142/bookrep-boot">GitHub로 이동</a>
-                        <a href="https://xodlsdldy.tistory.com/69">상세보기</a>
+                        <a href="https://github.com/Taein142/bookrep-boot" target="_blank">GitHub로 이동</a>
+                        <a href="https://xodlsdldy.tistory.com/69" target="_blank">상세보기</a>
                     </div>
                 </div>
             </div>
@@ -139,6 +138,39 @@
         e.preventDefault();
         window.scrollTo({
             top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('a[href="#development"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const developmentSection = document.getElementById('development');
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const scrollToPosition = developmentSection.offsetTop - headerHeight - 10;
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('a[href="#storage"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const storageSection = document.getElementById('storage');
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const scrollToPosition = storageSection.offsetTop - headerHeight - 10;
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('a[href="#projects"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const projectsSection = document.getElementById('projects');
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const scrollToPosition = projectsSection.offsetTop - headerHeight - 10;
+        window.scrollTo({
+            top: scrollToPosition,
             behavior: 'smooth'
         });
     });
