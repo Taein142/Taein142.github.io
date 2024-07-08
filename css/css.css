@@ -2,13 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif; /* 전체 폰트 통일 */
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f9; /* 배경색 변경 */
-    color: #333; /* 글자 색상 변경 */
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 #header {
@@ -56,22 +56,32 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px; /* 섹션 간격을 위해 사용 */
+    margin-bottom: 60px;
 }
 
 /* Home Section */
 #home {
-    background-color: #e3f2fd; /* 섹션 배경색 변경 */
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #home ul {
     padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.6;
+    padding: 5px;
 }
 
 #home li {
-    list-style-type: none;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 5px;
 }
 
 #home li:first-child {
@@ -84,19 +94,6 @@ body {
 
 #home ul:nth-of-type(4) li:first-child {
     font-style: italic;
-}
-
-#home ul:nth-of-type(2) li, 
-#home ul:nth-of-type(3) li, 
-#home ul:nth-of-type(4) li {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#home ul:nth-of-type(1) li {
-    background-color: transparent;
 }
 
 /* Development Section */
@@ -140,6 +137,10 @@ body {
 .tools img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#fullstac .backs p{
+    font-size: 20px;
 }
 
 /* Storage Section */
