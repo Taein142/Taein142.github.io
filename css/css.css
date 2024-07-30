@@ -105,7 +105,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin: 0 25px 0 25px;
+    margin: 0 80px 0 80px;
 }
 
 #fullstack label, .tools label {
@@ -185,8 +185,8 @@ body {
 
 .image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -244,4 +244,45 @@ body {
 
 .overlay a:hover {
     background-color: #2980b9;
+}
+
+
+#contact-me{
+    background-color: #e2f7f1;
+    padding: 20px 20px 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    margin: 0 auto; /* 중앙 배치 */
+}
+
+#contact-me p{
+    font-size: 20px;
+    margin: 10px 0; /* 상하 여백 추가 */
+    color: #333; /* 글자 색상 */
+    font-family: 'Arial', sans-serif; /* 폰트 스타일 */
+}
+
+#contact-me:hover{
+    background-color: #d1eee4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#contact-me p:hover{
+    color: #00796b; /* 글자 호버 색상 */
+}
+
+#contact-me p:first-of-type {
+    font-weight: bold; /* 첫 번째 p 태그 글자 두껍게 */
+}
+
+#contact-me p a {
+    color: #00796b; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-weight: bold; /* 링크 글자 두껍게 */
+}
+
+#contact-me p a:hover {
+    text-decoration: underline; /* 링크 호버 시 밑줄 추가 */
 }

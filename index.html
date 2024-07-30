@@ -15,6 +15,7 @@
             <li class="menu-item"><a href="#development">개발언어 & 도구</a></li>
             <li class="menu-item"><a href="#storage">블로그 & Github</a></li>
             <li class="menu-item"><a href="#projects">프로젝트</a></li>
+            <li class="menu-item"><a href="#contact-me">연락</a></li>
         </ul>
     </div><br><br>
     <div id="body">
@@ -22,18 +23,18 @@
             <ul>
                 <li>안녕하세요.</li>
                 <li>신입 벡엔드 개발자 김태인입니다.</li>
-            </ul><br>
+            </ul>
             <ul>
                 <li>이름: 김태인</li>
                 <li>생년월일: 1997.04.29</li>
                 <li>주소: 인천광역시 미추홀구 학익2동</li>
                 <li>최종학력: <br>2022년 2월 성결대학교 행정학과 학사 졸업
                 <br>인천일보아카데미 <br>[K-디지털트레이닝] 빅데이터 기반 데이터 사이언티스트 양성과정 1회차 수료 완료</li>
-            </ul><br>
+            </ul>
             <ul>
                 <li>장점: 조직친화적 성격</li>
                 <li>단점: 개발 경험 부족, 즉각적인 의사 전달력 발전 필요</li>
-            </ul><br>
+            </ul>
             <ul>
                 <li>한 마디: <br>팀원과 자주 소통하며 조직 및 개인 발전을 위해 끊임없이 노력하는 개발자가 되겠습니다.</li>
             </ul>
@@ -46,8 +47,8 @@
                         <img src="./images/java.png" alt="Java" style="width: 180px; height: 180px;">
                         <div id="phython">
                             <img src="./images/phython.png" alt="phython" style="width: 100px; height: 100px;">
-                            <p >java-basic</p>
-                            <p >py-weak</p>
+                            <p style="font-size: 15px;">py-weak</p>
+                            <p style="font-size: 15px;">java-basic</p>
                         </div>
                     </div>
                 </label>
@@ -67,7 +68,6 @@
                     <img src="./images/mysql.png" alt="MySQL">
                     <img src="./images/vscode.png" alt="VS Code">
                     <img src="./images/spring.png" alt="Spring">
-                    <img src="./images/eclipse.png" alt="Eclipse">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
         <div id="projects">
             <div class="row">
                 <div class="image-container">
-                    <img src="./images/임시이미지1.png" alt="프로젝트1">
+                    <img src="./images/디지몬카드_뒷면.jpeg" alt="프로젝트1">
                     <div class="overlay">
                         <p>
                             디지몬 카드의 정보를 입력하고 덱을 구축하는 프로젝트를 진행했습니다.<br>
@@ -133,7 +133,11 @@
                 </div>
             </div>
         </div>
-    </div><br><br>
+        <div id="contact-me">
+            <p>연락처: 010-5809-5132</p>
+            <p>이메일: xodlsdldy@naver.com</p>
+        </div>
+    </div> <br><br>
 </body>
 <script>
     document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
@@ -169,6 +173,17 @@
     document.querySelector('a[href="#projects"]').addEventListener('click', function(e) {
         e.preventDefault();
         const projectsSection = document.getElementById('projects');
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const scrollToPosition = projectsSection.offsetTop - headerHeight - 10;
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('a[href="#contact-me"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const projectsSection = document.getElementById('contact-me');
         const headerHeight = document.getElementById('header').offsetHeight;
         const scrollToPosition = projectsSection.offsetTop - headerHeight - 10;
         window.scrollTo({
